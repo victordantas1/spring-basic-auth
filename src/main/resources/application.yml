@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/basic_auth?useTimezone=true&serverTimezone=UTC&useLegacyDate
+    username: victor
+    password: senha123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate.format_sql: true
