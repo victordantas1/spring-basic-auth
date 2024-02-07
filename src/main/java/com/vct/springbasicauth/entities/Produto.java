@@ -25,4 +25,9 @@ public class Produto {
     @Column(name = "produto_preco", nullable = false, precision = 10, scale = 2)
     private BigDecimal preco;
 
+    public void converte(ProdutoDTO produtoDTO) {
+        this.setNome(produtoDTO.nome());
+        this.setPreco(produtoDTO.preco());
+    }
+
 }
